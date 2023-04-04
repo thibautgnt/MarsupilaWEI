@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D63341;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    width: 30%;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.nav-links a:hover {
+  color: #dc989f;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+.bar {
+    height: 4px;
+    background-color: white;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    color: #FFF;
+    padding: 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #FFD700;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #D63341;
+    color: #FFF;
+    transition: background-color 0.2s ease-in-out;
+}
+
+img {
+    max-height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+    display: none;
+  }
+  
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFD700;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .nav-links.show a {
+    padding: 10px;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  img {
+    max-height: 300px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.marsupilami {
+  animation: rotate 10s linear infinite reverse;
+}
+
+/* Footer at the bottom of the page */
+footer {
+    background-color: #D63341;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D63341;
+  color: white;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links ul li a:hover {
+  color: #dc989f;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-social img {
+  width: 32px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+      margin-bottom: 20px;
+  }
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+figure {
+  text-align: center;
+  margin: 0 20px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ekip {
+  width: 90%;
+  margin: 20px;
+}
